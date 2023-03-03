@@ -6,3 +6,7 @@
 
 /* Datenbanken auf Server anzeigen */
 SHOW DATABASES;
+
+CREATE DATABASE boo;
+
+SHOW DATABASES;
