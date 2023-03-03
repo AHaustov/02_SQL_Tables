@@ -5,7 +5,12 @@
 -- Kommentar 3
 
 /* Datenbanken auf Server anzeigen */
-SHOW DATABASES;
+
+/* Falls vorhanden wird boo gelöscht */
+
+DROP DATABASE IF EXISTS boo;
+
+/* Falls boo nicht exisitert, wird es neu angelegt */
 
 CREATE DATABASE IF NOT EXISTS boo;
 
