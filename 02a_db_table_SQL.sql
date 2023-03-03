@@ -45,3 +45,5 @@ INSERT INTO coworkers(firstName,location,age,computer) VALUES ("Gani","Pool",36,
 INSERT INTO coworkers(firstName,location,age,computer) VALUES ("Sohrab","Bett",26,"Mac");
 
 SELECT * FROM coworkers;
+
+SELECT * FROM coworkers WHERE location = "pool";
