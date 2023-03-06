@@ -6,7 +6,7 @@
 
 /* Datenbanken auf Server anzeigen */
 
-/* Falls vorhanden wird boo gelöscht */
+/* Falls vorhanden wird boo gelรถscht */
 
 DROP DATABASE IF EXISTS boo;
 
@@ -44,6 +44,17 @@ INSERT INTO coworkers(firstName,location,age,computer) VALUES ("Max","office",35
 INSERT INTO coworkers(firstName,location,age,computer) VALUES ("Gani","Pool",36,"iPad");
 INSERT INTO coworkers(firstName,location,age,computer) VALUES ("Sohrab","Bett",26,"Mac");
 
-SELECT * FROM coworkers;
+#SELECT * FROM coworkers;
 
-SELECT * FROM coworkers WHERE location = "pool";
+#SELECT * FROM coworkers WHERE location = "pool";
+
+/* Inhalte sortieren */
+
+SELECT 
+  firstName AS "Name",
+  location AS "Ort",
+  age AS "Alter"
+FROM coworkers
+#WHERE age >= 35 || location="Pool"
+ORDER BY age
+;
